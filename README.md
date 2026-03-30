@@ -48,13 +48,26 @@ The project includes several machine learning components:
 - **Scikit-learn**: For traditional ML models like Random Forest.
 - **TensorFlow/Keras**: For deep learning implementations.
 - **Pandas & NumPy**: For data manipulation and analysis.
-- **Matplotlib/Seaborn**: For data visualization (assumed based on typical ML projects).
+- **Pillow**: For image handling in data exploration.
 
 ## Dataset
 The model is trained on a heart failure dataset (e.g., from Kaggle or UCI repository). Ensure the dataset includes features like age, anemia, creatinine phosphokinase, diabetes, ejection fraction, high blood pressure, platelets, serum creatinine, serum sodium, sex, smoking, and time.
 
+## Deployment
+The project can be deployed on platforms like Streamlit Cloud or Heroku. For Heroku, use the provided `procfile` (if applicable).
+
+Link to deployed project: https://heart-failure-detection-ngxwwryvgwfebqzkmyi9v5.streamlit.app
+
+## Troubleshooting
+- **Scikit-learn Version Mismatch**: If you encounter errors loading the saved model (`Saved_steps.pkl`), it may be due to sklearn version incompatibility. The model was trained with sklearn 0.24.2. Update to a compatible version or retrain the model with your current sklearn version.
+- **Missing Dependencies**: Ensure all packages in `requirements.txt` are installed.
+- **Image Loading Issues**: Verify that the `Images/` folder contains the required PNG files for data exploration.
+
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request. For major changes, open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 - Dataset source: [UCI Heart Failure Clinical Records](https://archive.ics.uci.edu/dataset/519/heart+failure+clinical+records) or similar.
