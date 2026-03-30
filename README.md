@@ -13,7 +13,7 @@ This project is a machine learning application designed to detect heart failure 
 ## Installation
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/heart-failure-detection.git
+   git clone https://github.com/Pranavgandhi1304/Heart-Failure-Detection
    cd heart-failure-detection
    ```
 
